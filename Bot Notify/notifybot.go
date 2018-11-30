@@ -11,7 +11,6 @@ const (
 
 	maxTypingSleepMs time.Duration = time.Millisecond * 2000
 )
-
 // New constructs a new Bot using the slackToken to authorize against the Slack service.
 func New(slackToken string) *Bot {
 	b := &Bot{Client: slack.New(slackToken)}
